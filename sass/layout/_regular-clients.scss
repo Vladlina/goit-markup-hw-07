@@ -1,0 +1,42 @@
+.regular-clients-header {
+  margin: 0 0 50px 0;
+  color: $main-title-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.regular-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.regular-clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $networks-inactive;
+  border-radius: 4px;
+  color: $networks-inactive;
+
+  transition-property: color, border;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+}
+
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+  color: $accent-color;
+  border-color: $accent-color;
+}
+
+.regular-clients > .regular-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-clients-icon {
+  fill: currentColor;
+}

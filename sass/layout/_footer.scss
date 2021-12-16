@@ -1,0 +1,143 @@
+.footer {
+  background-color: $second-bg-color;
+  padding: 60px 0;
+}
+
+.footer-info {
+  margin-right: 70px;
+}
+
+.container > .logo-header.link {
+  display: block;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.logo-studio-footer {
+  color: $current-white-color;
+  padding-top: 0px;
+}
+
+.address {
+  width: 231px;
+}
+
+.address-info {
+  display: block;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $current-white-color;
+}
+
+.footer-list {
+  display: block;
+}
+
+.mail-phone-info {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footer-contact-color;
+
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.logo-footer {
+  padding: 0px;
+  margin: 0 0 20px 0;
+}
+
+.footer-social > .footer-social-header {
+  margin-bottom: 20px;
+  color: $current-white-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social-header {
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $current-white-color;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  margin-right: auto;
+}
+
+.social-footer > .networks-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social .networks-link {
+  color: $current-white-color;
+}
+
+.footer-subscribe-header {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $current-white-color;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.input-mail {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: $footer-contact-color;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.input-mail:focus {
+  border: 1px solid $accent-color;
+}
+
+.subscribe-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: none;
+}
+
+.icon-send {
+  margin-left: 10px;
+}

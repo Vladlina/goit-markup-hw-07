@@ -1,0 +1,87 @@
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-item .card-data {
+  border: 1px solid $border-color;
+  border-top: 0;
+  padding: 20px 24px;
+}
+
+.cards-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.cards-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.cards-link {
+  display: block;
+
+  transition-property: box-shadow, opacity;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+}
+
+.cards-link:hover,
+.cards-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cards-link:hover .description,
+.cards-link:focus .description {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.card-data {
+  padding: 20px 24px;
+  text-align: left;
+}
+
+.cards-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $main-title-color;
+}
+
+.cards-subtitle {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $first-text-color;
+}
+
+.cards-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  height: 100%;
+  margin: 0;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  background-color: $card-bg-description-color;
+  color: $current-white-color;
+  opacity: 0;
+
+  transition: transform $transition-duration $timing-function,
+    opacity $transition-duration $timing-function;
+}
