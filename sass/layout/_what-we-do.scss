@@ -2,10 +2,6 @@
   padding-top: 0;
 }
 
-.what-we-do-list {
-  display: flex;
-}
-
 .what-we-do-header,
 .our-team-header {
   margin-bottom: 50px;
@@ -15,6 +11,10 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: $main-title-color;
+}
+
+.what-we-do-list {
+  display: flex;
 }
 
 .what-we-do-item:not(:last-child) {

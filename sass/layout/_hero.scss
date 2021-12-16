@@ -32,7 +32,6 @@
   color: $current-white-color;
 }
 
-.hero-button,
 .btn {
   cursor: pointer;
   min-width: 200px;
@@ -48,15 +47,12 @@
   color: $current-white-color;
   background-color: $accent-color;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
   transition-property: background-color;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
-}
 
-.hero-button:hover,
-.btn:hover,
-.hero-button:focus,
-.btn:focus {
-  background-color: $hero-button-accent-color;
+  &:hover,
+  &:focus {
+    background-color: $hero-button-accent-color;
+  }
 }
