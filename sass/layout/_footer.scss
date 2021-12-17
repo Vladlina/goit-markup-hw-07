@@ -46,6 +46,10 @@
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .footer-social__wrap {

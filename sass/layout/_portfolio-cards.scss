@@ -27,31 +27,6 @@
   }
 }
 
-.cards__data {
-  padding: 20px 24px;
-  text-align: left;
-  .cards__item & {
-    border: 1px solid $border-color;
-    border-top: 0;
-    padding: 20px 24px;
-  }
-}
-
-.cards__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $main-title-color;
-}
-
-.cards__subtitle {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: $first-text-color;
-}
-
 .cards__thumb {
   position: relative;
   overflow: hidden;
@@ -76,4 +51,29 @@
     opacity: 1;
     transform: translateY(-100%);
   }
+}
+
+.cards__data {
+  padding: 20px 24px;
+  text-align: left;
+  .cards__item & {
+    border: 1px solid $border-color;
+    border-top: 0;
+    padding: 20px 24px;
+  }
+}
+
+.cards__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $main-title-color;
+}
+
+.cards__subtitle {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $first-text-color;
 }

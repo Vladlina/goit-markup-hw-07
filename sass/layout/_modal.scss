@@ -175,15 +175,6 @@ textarea {
   justify-content: center;
 }
 
-.modal-checkbox__agree-link {
-  color: $accent-color;
-}
-
-.modal__btn {
-  display: block;
-  margin: 0 auto;
-}
-
 .modal-checkbox__icon-check-box {
   display: flex;
   align-items: center;
@@ -207,8 +198,17 @@ textarea {
 }
 
 .modal-checkbox__icon-check {
-  color: transparent;
+  fill: transparent;
   .modal-checkbox:checked + .modal-checkbox__agree & {
     fill: $current-white-color;
   }
+}
+
+.modal-checkbox__agree-link {
+  color: $accent-color;
+}
+
+.modal__btn {
+  display: block;
+  margin: 0 auto;
 }
