@@ -1,17 +1,16 @@
-.special-qualities-list {
+.special-qualities__list {
   display: flex;
 }
 
-.special-qualities-item {
+.special-qualities__item {
   margin-right: 30px;
   width: 270px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
-.special-qualities-item:last-child {
-  margin-right: 0px;
-}
-
-.special-qualities-area {
+.special-qualities__area {
   display: flex;
   width: 100%;
   min-height: 120px;
@@ -22,7 +21,7 @@
   background-color: $third-bg-color;
 }
 
-.special-qualities-header {
+.special-qualities__header {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -33,7 +32,7 @@
   text-align: left;
 }
 
-.special-qualities-info {
+.special-qualities__info {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

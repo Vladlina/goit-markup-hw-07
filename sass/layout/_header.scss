@@ -2,7 +2,7 @@
   border-bottom: 1px solid $line-color;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -12,42 +12,24 @@
   align-items: center;
 }
 
-.logo-header,
-.logo-footer {
-  display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-family: $logo-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $accent-color;
-}
-
-.logo-studio-header {
-  color: $logo-color;
-}
-
-.header-list {
+.header__list {
   display: flex;
 }
 
-.header-item:not(:last-child),
-.header-contact-info-item:not(:last-child) {
+.header__item:not(:last-child),
+.header__contact-info-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-contact-info {
+.header__contact-info {
   display: flex;
   margin-left: auto;
 }
 
-.header-contact-info-link {
+.header__contact-info-link {
   display: flex;
-  padding: 32px 0;
   align-items: center;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -56,18 +38,17 @@
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
-
   &:hover,
   &:focus {
     color: $accent-color;
   }
 }
 
-.header-item {
+.header__item {
   position: relative;
 }
 
-.header-link {
+.header__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -79,7 +60,6 @@
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
-
   &:hover,
   &:focus {
     color: $accent-color;
@@ -88,7 +68,6 @@
 
 .current {
   color: $accent-color;
-
   &::after {
     position: absolute;
     bottom: -1px;
@@ -102,15 +81,16 @@
   }
 }
 
-// .mail-phone-info:hover,
-// .mail-phone-info:focus,
-.envelope:hover,
-.envelope:focus {
-  color: $accent-color;
+.envelope {
+  margin-right: 10px;
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.envelope,
 .smartphone {
   margin-right: 10px;
-  // fill: currentColor;
+  fill: currentColor;
 }

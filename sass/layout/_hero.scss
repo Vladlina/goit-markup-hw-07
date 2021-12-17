@@ -8,7 +8,6 @@
   padding-bottom: 200px;
   border: 1px solid transparent;
   background-color: $second-bg-color;
-
   background-image: linear-gradient(
       to right,
       $hero-gradient-color,
@@ -20,7 +19,7 @@
   background-size: cover;
 }
 
-.hero-header {
+.hero__header {
   width: 696px;
   padding: 280 452;
   margin: 0 auto 30px;
